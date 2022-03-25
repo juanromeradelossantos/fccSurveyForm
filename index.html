@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - fccSurveyForm</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div id="background"></div>
+<main>
+  <h1 id="title">Lockdown activities survey form</h1>
+  <header>
+  <p id="description">This form was designed to collect information about how people have enternained themselves during the pandemic lockdown.</p>
+  </header>
+  <form id="survey-form" onsubmit="return false;">
+    
+    <label id="name-label" class="label" for="name">Name</label><br>
+    <input id="name" class="input-box" name="name" type="text" placeholder="Please enter your name" required><br>
+    <label id="email-label" class="label" for="email">Email</label><br>
+    <input id="email" class="input-box" name="email" type="email" placeholder="Please enter your email" required><br>
+    <label id="number-label" class="label" for="number">Age (optional)</label><br>
+    <input id="number" class="input-box" name="number" type="number" placeholder="Please enter your age" min=0 max=999><br>
+    <label id="dropdown-label" class="label" for="dropdown">Choose the option that best suits your working status during lockdown:</label><br>
+    
+    <select name="dropdown" id="dropdown">
+      <option value="worker">Worker</option>
+      <option value="employee">Employee</option>
+      <option value="self-employed">Self-employed</option>
+      <option value="unemployed">Unemployed</option>
+    </select><br>
+    
+    <p>Please select your gender:</p>
+    <div>
+      <input id="radio-male" name="radio-group" type="radio" value="male">
+      <label for="radio-male">Male</label><br>
+      <input id="radio-female" name="radio-group" type="radio" value="female">
+      <label for="radio-female">Female</label><br>
+      <input id="radio-other" name="radio-group" type="radio" value="other">
+      <label for="radio-other">Other</label>
+    </div>
+    
+    <p>Please select one or more of the activities listed below that you practised as an entertainment during the pandemic lockdown:</p>
+    <div id="check">
+      <input id="check-reading" name="check-group" type="checkbox" value="reading">
+      <label for="check-reading">Reading a book (or more...)</label><br>
+      <input id="check-music" name="check-group" type="checkbox" value="music">
+      <label for="check-music">Listening to music</label><br>
+      <input id="check-instrument" name="check-group" type="checkbox" value="instrument">
+      <label for="check-instrument">Playing an instrument</label><br>
+      <input id="check-series" name="check-group" type="checkbox" value="series">
+      <label for="check-series">Watching series / movies</label><br>
+      <input id="check-gaming" name="check-group" type="checkbox" value="gaming">
+      <label for="check-gaming">Gaming</label><br>
+      <input id="check-painting" name="check-group" type="checkbox" value="painting">
+      <label for="check-painting">Painting</label><br>
+      <input id="check-programming" name="check-group" type="checkbox" value="programming">
+      <label for="check-programming">Programming</label>
+    </div>
+    
+    <label for="comments" id="comments-label">Additional comments:</label><br>
+    <textarea id="comments" name="comments">Here you can write additional activities not covered before!</textarea><br>
+    
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
